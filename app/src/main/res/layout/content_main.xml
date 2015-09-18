@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+
+
+        <ProgressBar
+            android:id="@+id/progressBar10thChar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp" android:indeterminateOnly="true"
+            android:indeterminate="true"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="10th Character"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textTask10thChar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="result" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/progressBarEvery10thChar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:indeterminate="true"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Every 10th Character"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textTaskEvery10thChar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            tools:text="result" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/progressBarWordCounter"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:indeterminate="true"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Word Counter"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textTaskWordCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="result" />
+    </LinearLayout>
+
+</LinearLayout>

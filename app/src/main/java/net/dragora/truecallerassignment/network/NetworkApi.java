@@ -1,6 +1,9 @@
 package net.dragora.truecallerassignment.network;
 
+import android.os.AsyncTask;
+
 import retrofit.RestAdapter;
+import retrofit.android.MainThreadExecutor;
 import retrofit.client.OkClient;
 
 /**
@@ -27,6 +30,7 @@ public class NetworkApi {
         restAdapter = new RestAdapter.Builder()
                 .setClient(new OkClient())
                 .setEndpoint(BASE_HOST)
+                .setExecutors(AsyncTask.THREAD_POOL_EXECUTOR, new MainThreadExecutor()) // Just to allow espresso to wait for network events
                 .build();
         apiService = restAdapter.create(ApiService.class);
 

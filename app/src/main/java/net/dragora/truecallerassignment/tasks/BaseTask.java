@@ -53,6 +53,7 @@ public abstract class BaseTask<T> extends AsyncTaskLoader<T> {
             }
         }
         if (myPrefs.injectError().get()) {
+            isRunning = false;
             return null;
         }
 
